@@ -65,4 +65,42 @@ function exercise6() {
   });
 }
 
-exercise6();
+function exercise7() {
+  let currentLargest = 0;
+  const numArr = [8, 12, 44, 5, 20, 13, 4, 99, 15, 3];
+  numArr.forEach((element) => {
+    if (element > currentLargest) {
+      currentLargest = element;
+    }
+  });
+
+  console.log(`The biggest number is: ${currentLargest}`);
+}
+
+function exercise8() {
+  const arr = [1, 4, 12, 55, 22, 3];
+  const emptyArr = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    emptyArr.push(arr[i]);
+  }
+
+  console.log("New array:");
+  emptyArr.forEach((element) => {
+    console.log(element);
+  });
+}
+
+function exercise9() {
+  const arr = [1, 4, 12, 55, 22, 3];
+
+  let length = arr.length;
+  for (let i = 0; i < length; i++) {
+    arr.pop();
+  }
+
+  console.log("Array should be empty:");
+  arr.forEach((element) => {
+    console.log(element);
+  });
+}
